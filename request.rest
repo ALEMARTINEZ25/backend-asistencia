@@ -1,0 +1,146 @@
+### peticion para crear usuarios
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+{
+
+    "name": "miss daniela",
+    "email": "daniela@correo.com",
+    "password": "1234i",
+    "confPassword": "1234i",
+    "role": "admin"
+    
+}
+###
+GET http://localhost:5000/observations
+
+
+
+###
+GET http://localhost:5000/observations/
+
+###
+POST   http://localhost:5000/users/32b111c0-fcf6-40c6-8d14-abb16059e01d
+Content-Type: application/json
+
+{
+
+    "name": "Joshua Gonzales",
+    "email": "Gonzales@correo.com",
+    "password": "1234i",
+    "confPassword": "1234i", 
+    "role": "admin"
+}
+
+###
+DELETE  http://localhost:5000/users/32b111c0-fcf6-40c6-8d14-abb16059e01d
+
+###
+POST  http://localhost:5000/login
+Content-Type: application/json
+
+{  
+    "email": "Gonzales@correo.com",
+    "password": "1234i"
+    
+}
+
+
+### peticion para cerrar sesion
+DELETE http://localhost:5000/logout
+###
+POST  http://localhost:5000/observation
+Content-Type: application/json
+
+{  
+    "content": "el profe siempre llega temprano"
+    
+}
+### 
+GET http://localhost:5000/observation
+
+###
+GET http://localhost:5000/observations/b4655cac-c8c6-4d2e-ad2f-449b8a7479a2
+###
+PATCH  http://localhost:5000/observations16449900-3b3b-4fc1-b277-5bf0d201dc92
+Content-Type: application/json
+
+{
+"name": "Joshua Gonzales",
+    "email": "Gonzales@correo.com",
+    "password": "45678",
+    "confPassword": "45678", 
+    "role": "admin"
+}
+
+
+###
+DELETE  http://localhost:5000/observations/16449900-3b3b-4fc1-b277-5bf0d201dc92
+
+
+### peticion para crear usuarios
+POST  http://localhost:5000/users
+Content-Type: application/json
+
+{
+
+    "name": "joshua gonzales",
+    "email": "joshua@correo.com",
+    "password": "1234i",
+    "confPassword": "1234i",
+    "role": "admin"
+    
+}
+### para ver los usuarios
+GET http://localhost:5000/users
+### para ver solo un usuario
+GET http://localhost:5000/users/3d05399e-74fe-490b-81db-338ae76fde89
+
+### para actualizar el usuario
+PATCH  http://localhost:5000/users/3d05399e-74fe-490b-81db-338ae76fde89
+Content-Type: application/json
+
+{
+"name": "Joshua Gonzales",
+    "email": "Gonzales@correo.com",
+    "password": "",
+    "confPassword": "", 
+    "role": "admin"
+}
+
+###
+DELETE  http://localhost:5000/users/3d05399e-74fe-490b-81db-338ae76fde89
+
+
+### peticion para crear asignaturas
+POST  http://localhost:5000/signatures
+Content-Type: application/json
+
+{
+    "signatureName": "Ale mtz"
+}
+
+### para ver las asignaturas
+GET http://localhost:5000/signatures
+
+
+### para ver solo una asignatura
+GET http://localhost:5000/signatures/2180cc32-fff9-412e-a642-c1d217dffabb
+
+
+    
+### Actualizar para crear asignaturas
+PATCH http://localhost:5000/signatures/2180cc32-fff9-412e-a642-c1d217dffabb
+Content-Type: application/json
+
+{
+    "signatureName": "Ale mtz Update"
+}
+
+
+### Actualizar para crear asignaturas
+DELETE   http://localhost:5000/signatures/2180cc32-fff9-412e-a642-c1d217dffabb
+
+
+###
+GET http://localhost:5000/hours
